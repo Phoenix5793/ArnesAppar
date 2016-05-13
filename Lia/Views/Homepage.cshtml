@@ -1,0 +1,12 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Homepage>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = null;
+}
+<head>
+	<link href="/css/TextStyles.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+
+@CurrentPage.GetGridHtml("homeGrid")
